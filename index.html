@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+    <div class="content">
+    
+        <input type="password" placeholder="password" id="password" >
+        <img src="eye-close.png" id="eye">
+    
+    </div>
+
+    <script>
+
+        let pass=document.getElementById("password");
+        let eye_status=document.getElementById("eye");
+
+        eye_status.onclick=function(){
+            if(pass.type=="password")
+            {
+                pass.type="text";
+                eye_status.src="eye-open.png";
+            }
+            else{
+                pass.type="password";
+                eye_status.src="eye-close.png";
+            }
+        }
+    
+    </script>
+</body>
+</html>
